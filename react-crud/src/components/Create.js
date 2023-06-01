@@ -57,6 +57,7 @@ export default function Create() {
         <Button color="orange" onClick={postData} type="submit">
           Submit
         </Button>
+        <Button>ji</Button>
       </Form>
     </div>
   );
