@@ -3,6 +3,7 @@ import { Button, Form } from "semantic-ui-react";
 import axios from "axios";
 import { useNavigate } from "react-router";
 import Navbar from "../Navbar/Navbar";
+import "./Create.css";
 
 export default function Create() {
   let navigate = useNavigate();

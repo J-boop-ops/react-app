@@ -2,8 +2,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #a8abd6;
     color: rgb(20, 15, 15);
+  }
+
+  .searchpage{
+    background-image: url("https://www.nikaiacours.fr/wp-content/uploads/2019/12/login-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   /* make the whole page background color to lavender */

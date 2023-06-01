@@ -3,11 +3,17 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #a8abd6;
     color: rgb(20, 15, 15);
     flex-direction: column;
   }
   
+  .main{
+    background-image: url("https://www.nikaiacours.fr/wp-content/uploads/2019/12/login-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .main-header{
     font-family: 'Montserrat', sans-serif;
   }

@@ -47,6 +47,15 @@ export default function Search() {
     });
   };
 
+  const handleDelete = (data) => {
+    const confirmed = window.confirm(
+      "Are you sure you want to delete this item?"
+    );
+    if (confirmed) {
+      onDelete(data.productId);
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -86,10 +95,7 @@ export default function Search() {
                         Update
                       </Button>
                     </Link>
-                    <Button
-                      color="green"
-                      onClick={() => onDelete(data.productId)}
-                    >
+                    <Button color="green" onClick={() => handleDelete(data)}>
                       Delete
                     </Button>
                   </Table.Cell>

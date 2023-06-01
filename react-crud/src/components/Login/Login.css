@@ -17,3 +17,9 @@
   background-size: cover;
   background-position: center;
 }
+
+input{
+    background-color:transparent;
+    opacity: 0.7;
+    
+ }
