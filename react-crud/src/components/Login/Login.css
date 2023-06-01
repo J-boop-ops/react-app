@@ -1,0 +1,19 @@
+/* align the login class to the center of the page */
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(20, 15, 15);
+  flex-direction: column;
+}
+
+/* add background image to the login component */
+
+.login {
+  background-image: url("https://www.nikaiacours.fr/wp-content/uploads/2019/12/login-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

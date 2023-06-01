@@ -1,4 +1,4 @@
-.home{
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,10 +8,15 @@
     flex-direction: column;
   }
   
-  body {
-    background-color: #a8abd6;
+  .main-header{
+    font-family: 'Montserrat', sans-serif;
   }
   
+  .create-form label{
+    color: whitesmoke !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px !important;
+  }
 
 
   

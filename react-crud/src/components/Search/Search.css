@@ -1,17 +1,15 @@
-.home{
-    display: flex;
+.searchpage{
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #a8abd6;
     color: rgb(20, 15, 15);
-    flex-direction: column;
   }
-  
-  body {
-    background-color: #a8abd6;
-  }
-  
+
+  /* make the whole page background color to lavender */
+body {
+  background-color: #a8abd6;
+}
 
 
   
