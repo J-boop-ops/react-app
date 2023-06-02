@@ -6,6 +6,9 @@ import { Menu, Segment, Label } from "semantic-ui-react";
 import "./Navbar.css";
 
 export default function Navbar() {
+  const user = localStorage.getItem("user");
+  console.log(user);
+
   return (
     <div>
       <Segment inverted>
@@ -27,7 +30,7 @@ export default function Navbar() {
                 src="https://react.semantic-ui.com/images/avatar/small/elliot.jpg"
                 alt="User:"
               />
-              Jaswanth B S
+              {user}
             </Label>
             <Link to="/">
               <button className="ui inverted red button">Logout</button>

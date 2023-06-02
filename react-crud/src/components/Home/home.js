@@ -5,6 +5,7 @@ import { Card, Image, Icon } from "semantic-ui-react";
 import Navbar from "../Navbar/Navbar";
 
 export default function Home() {
+  const user = localStorage.getItem("user");
   return (
     <>
       <Navbar />
@@ -16,12 +17,12 @@ export default function Home() {
             ui={false}
           />
           <Card.Content>
-            <Card.Header>Jaswanth</Card.Header>
+            <Card.Header>{user}</Card.Header>
             <Card.Meta>
               <span className="date">Joined in 2023</span>
             </Card.Meta>
             <Card.Description>
-              Jaswanth is a Retailer in Bangalore.
+              {user} is a Retailer in Bangalore.
             </Card.Description>
           </Card.Content>
           <Card.Content extra>

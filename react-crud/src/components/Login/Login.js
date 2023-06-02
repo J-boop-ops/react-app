@@ -19,6 +19,7 @@ export default function Login() {
         let user = data.filter((item) => {
           return Username === item.username && Password === item.password;
         });
+        localStorage.setItem("user", Username);
         if (user.length) {
           navigate("/home");
         } else {
