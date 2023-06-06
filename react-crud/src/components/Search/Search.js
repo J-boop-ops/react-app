@@ -10,6 +10,7 @@ export default function Search() {
   const [APIData, setAPIData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -56,6 +57,21 @@ export default function Search() {
     }
   };
 
+  const setCartData = (data) => {
+    let {
+      productId,
+      userId,
+      productName,
+      productDescription,
+      productCategory,
+    } = data;
+    localStorage.setItem("userId", userId);
+    localStorage.setItem("productId", productId);
+    localStorage.setItem("productName", productName);
+    localStorage.setItem("productDescription", productDescription);
+    localStorage.setItem("productCategory", productCategory);
+  };
+
   return (
     <>
       <Navbar />
@@ -95,9 +111,19 @@ export default function Search() {
                         Update
                       </Button>
                     </Link>
-                    <Button color="green" onClick={() => handleDelete(data)}>
+                    <Button
+                      color="green"
+                      onClick={() => {
+                        handleDelete(data);
+                      }}
+                    >
                       Delete
                     </Button>
+                    <Link to="/cartview">
+                      <Button color="orange" onClick={() => setCartData(data)}>
+                        AddToCart
+                      </Button>
+                    </Link>
                   </Table.Cell>
                 </Table.Row>
               );

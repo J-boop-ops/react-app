@@ -5,6 +5,8 @@ import Update from "./components/Update/Update";
 import Create from "./components/Create/Create";
 import Search from "./components/Search/Search";
 import Login from "./components/Login/Login";
+import AddToCart from "./components/AddToCart/AddToCart";
+import SearchCart from "./components/Search/SearchCart";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route exact path="/update" Component={Update} />
         <Route exact path="/create" Component={Create} />
         <Route exact path="/read" Component={Search} />
+        <Route exact path="/cart" Component={AddToCart} />
+        <Route exact path="/cartview" Component={SearchCart} />
       </Routes>
     </Router>
   );

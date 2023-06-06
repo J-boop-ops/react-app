@@ -20,6 +20,8 @@ export default function Login() {
           return Username === item.username && Password === item.password;
         });
         localStorage.setItem("user", Username);
+        localStorage.setItem("password", Password);
+        localStorage.setItem("usernum", user[0].userId);
         if (user.length) {
           navigate("/home");
         } else {
