@@ -9,16 +9,17 @@ export default function AddToCart() {
   const userid = localStorage.getItem("usernum");
   const [APIData, setAPIData] = useState([]);
 
-  const getCartData = () => {
-    axios
-      .get(`https://localhost:7101/api/AddToCart`)
-      .then((getData) => setAPIData(getData.data));
-  };
-
   useEffect(() => {
-    const results = APIData.filter((data) => data.userId == userid);
-    setAPIData(results);
-  });
+    console.log(userid);
+    const getCartData = () => {
+      axios.get(`https://localhost:7101/api/AddToCart`).then((getData) => {
+        const filterData = getData.data.filter((data) => data.userId == userid);
+        setAPIData(filterData);
+      });
+    };
+
+    getCartData();
+  }, []);
 
   const getData = () => {
     axios.get(`https://localhost:7101/api/AddToCart`).then((getData) => {

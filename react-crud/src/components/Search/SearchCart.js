@@ -85,7 +85,10 @@ export default function SearchCart() {
             />
           </Form.Field>
           <Button color="green" onClick={cartAPIData} type="submit">
-            Update
+            Add
+          </Button>
+          <Button color="red" onClick={() => navigate("/read")}>
+            Cancel
           </Button>
         </Form>
       </div>
